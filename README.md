@@ -57,25 +57,26 @@ You can use your project to predict your own ratings too!
 
 2. In the new file (e.g. `john.dat`), you'll see something like the following:
     ```python
-        make_user(
-	        'John DoeNero',     # name
-		        [                   # reviews
-			            make_review('Jasmine Thai', 4.0),
-				                ...
-						        ]
-							    ```
-							        Replace the second line with your name (as a string).
-
+    make_user(
+        'John DoeNero',     # name
+        [                   # reviews
+            make_review('Jasmine Thai', 4.0),
+            ...
+        ]
+    )
+    ```
+    Replace the second line with your name (as a string).
+    
 3. Replace the existing reviews with reviews of your own! You can get a list of Berkeley restaurants with the following command:
     ```sh
-        $ python3 recommend.py -r
-	    ```
+    $ python3 recommend.py -r
+    ```
 
 4. Use `recommend.py` to predict ratings for you:
     ```sh
-        $ python3 recommend.py -u john -k 2 -p -q Sandwiches
-	    ```
-	        (Replace `john` with your name.) Play around with the number of clusters (the `-k` option) and try different queries (with the `-q` option)!
+    $ python3 recommend.py -u john -k 2 -p -q Sandwiches
+	```
+	(Replace `john` with your name.) Play around with the number of clusters (the `-k` option) and try different queries (with the `-q` option)!
 
 ### 5. Class Project Site
 [here]
